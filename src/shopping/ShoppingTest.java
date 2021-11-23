@@ -96,7 +96,7 @@ public class ShoppingTest extends Utility {
         Thread.sleep(500);
 
         useVerifyResult(By.xpath("//div[@class='total clearfix']//span[@class='surcharge-cell']"),"$37.03","wrong total");
-        Thread.sleep(500);
+        Thread.sleep(1000);
 
         useClickOnElement(By.cssSelector("button[class='btn regular-button regular-main-button place-order submit']"));
 
@@ -169,7 +169,7 @@ public class ShoppingTest extends Utility {
         Thread.sleep(2000);
 
         useVerifyResult(By.xpath("//li[contains(text(),'Item(s) deleted from your cart')]"),"Item(s) deleted from your cart","product still on cart");
-         Thread.sleep(500);
+         Thread.sleep(2000);
 
         useVerifyResult(By.xpath("//h1[normalize-space()='Your cart is empty']"),"Your cart is empty","product still on cart");
 
